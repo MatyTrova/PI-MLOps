@@ -1,8 +1,6 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Proyecto Machine Learning Operations (MLOps)</title>
   </head>
   <body>
     <h1 style="text-align: center;">Proyecto Machine Learning Operations (MLOps)</h1>
