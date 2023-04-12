@@ -1,14 +1,22 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
   </head>
   <body>
     <h1 style="text-align: center;">Proyecto Machine Learning Operations (MLOps)</h1>
-    <div style="text-align:center">
+    <div>
       <img src="https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/mlops.png" alt="MLOps">
     </div>
   </body>
 </html>
+
 
 --- 
 ## `Descripción`
