@@ -1,6 +1,7 @@
 
 
-#                                               **Proyecto Machine Learning Operations (`MLOps`)**
+#<center><h1>Proyecto Machine Learning Operations (`MLOps`)</h1></center>
+                                            
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/mlops.png"  height=300>
