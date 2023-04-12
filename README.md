@@ -2,7 +2,7 @@
 
 # Proyecto Machine Learning Operations (MLOps)
 
-![MLOps](https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/mlops.png "MLOps")
+![MLOps](https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/mlops.png "MLOps" alt="MLOps")
 
 --- 
 ## `Descripción`
