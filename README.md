@@ -1,9 +1,9 @@
 
 
-# Proyecto Machine Learning Operations (MLOps)
+# **Proyecto Machine Learning Operations (`MLOps`)**
 
 <p align="center">
-<img src="[https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/mlops.png]"  height=300>
+<img src="https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/mlops.png"  height=300>
 </p>
 
 --- 
