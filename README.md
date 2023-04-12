@@ -1,6 +1,6 @@
 
 
-<center><h1>Proyecto Machine Learning Operations (`MLOps`)</h1></center>
+# <h1 align=center> **Proyecto: Machine Learning Operations** (MLOps) </h1>
                                             
 
 <p align="center">
