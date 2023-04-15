@@ -19,34 +19,56 @@ df_modelo = pd.read_csv("df_modelo.csv")
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
     output = """
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Poppins Light', sans-serif;
+            }
+            h1 {
+                font-size: 36px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 24px;
+            }
+            ol li {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
         <div style="display:flex; flex-direction:row;">
-        <div style="display:flex; flex-direction:row; background-color:#f2f2f2;">
-            <img src="https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/streaming.jpg" width="420" height="700">
-            <div style="display:flex; flex-direction:column; margin-left:20px;">
-                <h1>¡Te damos la bienvenida a nuestra plataforma en línea, donde podrás realizar consultas sobre películas y series de diversas plataformas, como Netflix, Amazon, Hulu y Disney! </h1>
-                <p style="font-size: 26px; display:flex; flex-direction:column; margin-left:20px; font-family: 'Poppins Light', sans-serif;">Aquí encontrarás 7 diferentes tipos de búsquedas disponibles:</p>
-                <ol>
-                    <li style="font-size: 22px;">Película con mayor duración según año, plataforma y tipo de duración.  </li>
-                     EJ -> ...  /get_max_duration/{anio}/{plataforma}/{dtype} <br>
-                    <br><li style="font-size: 24px;">Cantidad de películas según plataforma, con un puntaje mayor a XX en determinado año. </li>
-                     EJ -> ...  /get_score_count/{plataforma}/{scored}/{anio}  <br>
-                    <br><li style="font-size: 24px;">Cantidad de películas según plataforma. </li>
-                     EJ -> ...  /get_count_platform/{plataforma}<br> 
-                    <br><li style="font-size: 24px;">Actor que más se repite según plataforma y año.</li>
-                     EJ -> ...  /get_actor/{plataforma}/{anio}<br> 
-                    <br><li style="font-size: 24px;">La cantidad de contenidos que se publicó por país y año.</li>
-                     EJ -> ...  /prod_per_country/{tipo}/{pais}/{anio} <br>
-                   <br> <li style="font-size: 24px;">La cantidad total de contenidos según el rating de audiencia dado.</li>
-                     EJ -> ...  /get_contents/{rating}<br> 
-                    <br> <li style="font-size: 26px;">Modelo de recomendación de películas.</li>
-                     EJ -> ...  /get_recomendation/{title}<br> 
-                </ol>
-                <p>En el archivo README.md del repositorio de GitHub ( https://github.com/MatyTrova/PI-MLOps ), <br> encontrarás información detallada sobre el formato de búsqueda que debes seguir para cada una de las consultas disponibles</p>
+            <div style="display:flex; flex-direction:row; background-color:#f2f2f2;">
+                <img src="https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/streaming.jpg" width="420" height="700">
+                <div style="display:flex; flex-direction:column; margin-left:20px;">
+                    <h1>¡Te damos la bienvenida a nuestra plataforma en línea, donde podrás realizar consultas sobre películas y series de diversas plataformas, como Netflix, Amazon, Hulu y Disney!</h1>
+                    <p>Aquí encontrarás 7 diferentes tipos de búsquedas disponibles:</p>
+                    <ol>
+                        <li>Película con mayor duración según año, plataforma y tipo de duración.<br>
+                            Ejemplo: .../get_max_duration/{anio}/{plataforma}/{dtype}</li>
+                        <li>Cantidad de películas según plataforma, con un puntaje mayor a XX en determinado año.<br>
+                            Ejemplo: .../get_score_count/{plataforma}/{scored}/{anio}</li>
+                        <li>Cantidad de películas según plataforma.<br>
+                            Ejemplo: .../get_count_platform/{plataforma}</li>
+                        <li>Actor que más se repite según plataforma y año.<br>
+                            Ejemplo: .../get_actor/{plataforma}/{anio}</li>
+                        <li>La cantidad de contenidos que se publicó por país y año.<br>
+                            Ejemplo: .../prod_per_country/{tipo}/{pais}/{anio}</li>
+                        <li>La cantidad total de contenidos según el rating de audiencia dado.<br>
+                            Ejemplo: .../get_contents/{rating}</li>
+                        <li>Modelo de recomendación de películas.<br>
+                            Ejemplo: .../get_recomendation/{title}</li>
+                    </ol>
+                    <p>En el archivo README.md del repositorio de GitHub (<a href="https://github.com/MatyTrova/PI-MLOps">https://github.com/MatyTrova/PI-MLOps</a>), encontrarás información detallada sobre el formato de búsqueda que debes seguir para cada una de las consultas disponibles.</p>
+                </div>
+                <img src="https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/plataformas.jpg" width="420" height="700">
             </div>
-            <img src="https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/plataformas.jpg" width="420" height="700">
         </div>
-    """
-    return HTMLResponse(content=output)
+    </body>
+"""
+return HTMLResponse(content=output)
 
 # Se desarrollan las consultas que fueron solicitadas por el cliente:
 
