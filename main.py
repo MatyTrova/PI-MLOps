@@ -229,7 +229,7 @@ def get_recommendations_new(title, num_recommendations=5):
     # Obtener los índices de las películas más similares
     movie_indices = [i[0] for i in sim_scores[1:num_recommendations+1]]
     # Ordenar segun el score
-    peliculas = df[['title',"score"]].iloc[movie_indices].sort_values(by = "score",ascending=False)
+    peliculas = df_modelo[['title',"score"]].iloc[movie_indices].sort_values(by = "score",ascending=False)
     peliculas = list(peliculas["title"])
     # Devolver los títulos de las películas más similares
     return {'recomendacion': peliculas}
