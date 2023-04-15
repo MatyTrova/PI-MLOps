@@ -13,7 +13,7 @@ app = FastAPI(title = "Proyecto MLOps")
 df_streaming = pd.read_csv("df_streaming.csv")
 
 # Cargamos el modelo desde el archivo pickle
-df = pd.read_csv("df_modelo.csv")
+df_modelo = pd.read_csv("df_modelo.csv")
 
 # Creamos la página de inicio de la api
 @app.get("/", response_class=HTMLResponse)
@@ -212,7 +212,7 @@ def get_contents(rating: str):
 # se ordenarán según el score y devolverá una lista con 5 valores, cada uno siendo el string del nombre de las películas con mayor puntaje, en orden descendente.
 
 @app.get('/get_recomendation/{title}')
-def get_recommendations_new(title, df=df, num_recommendations=5):
+def get_recommendations_new(title, df=df_modelo, num_recommendations=5):
     features = df.drop(["title","description","id","duration_type"],axis=1)
     scaler = StandardScaler()
     features = scaler.fit_transform(features)
