@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 app = FastAPI(title = "Proyecto MLOps")
 
 # Importamos el data set "df_streaming" exportado del archivo (ETL.ipynb)
-df_streaming = pd.read_csv("Datasets/df_streaming.csv")
+df_streaming = pd.read_csv("df_streaming.csv")
 
 # Cargamos el modelo desde el archivo pickle
 df = pd.read_csv("df_modelo.csv")
