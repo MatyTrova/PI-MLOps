@@ -61,6 +61,7 @@ async def index(request: Request):
                             (<a href="https://mlops-render.onrender.com/get_recomendation/finding nemo"> Ejemplo7</a>)</li>
                     </ol>
                     <p>En el archivo README.md del repositorio de GitHub (<a href="https://github.com/MatyTrova/PI-MLOps">https://github.com/MatyTrova/PI-MLOps</a>), encontrarás información detallada sobre el formato de búsqueda que debes seguir para cada una de las consultas disponibles.</p>
+                     <p>Proyecto desarrollado por: Matias Trovatto</p>
                 </div>
                 <img src="https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/michael.jpg" width="420" height="315">
             </div>
