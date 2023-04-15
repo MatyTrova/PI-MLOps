@@ -40,7 +40,7 @@ Además de un video explicativo acerca de esta :
 
 + EDA.ipynb: Contiene el código para el análisis exploratorio de datos, y las conclusiones de ésta.
 
-+ Consultas.ipynb: Contiene las funciones para realizar consultas de búsqueda en el set de datos.
++ Consultas.ipynb: Contiene las funciones para realizar consultas de búsqueda en el set de datos, además del modelo de recomendación.
 
 + main.py: Contiene todo el código la formación y correcto funcionamiento de la API.
 
