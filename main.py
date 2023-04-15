@@ -14,9 +14,6 @@ df_streaming = pd.read_csv("df_streaming.csv")
 
 # Cargamos el modelo desde el archivo pickle
 df_modelo = pd.read_csv("df_modelo.csv")
-features = df_modelo.drop(["title","description","id","duration_type"],axis=1)
-scaler = StandardScaler()
-features = scaler.fit_transform(features)
 
 # Creamos la página de inicio de la api
 @app.get("/", response_class=HTMLResponse)
@@ -216,10 +213,13 @@ def get_contents(rating: str):
 
 @app.get('/get_recomendation/{title}')
 def get_recommendations_new(title, num_recommendations=5):
+    features = df_modelo.drop(["title","description","id","duration_type"],axis=1)
+    scaler = StandardScaler()
+    features = scaler.fit_transform(features)
     # Obtener las características de la película a recomendar
     df_filtrado = df_modelo[df_modelo['title'] == title]
     # Si la película no se encuentra en el conjunto de datos, se crea un vector de características
-    caracteristicas = df_filtrado.drop(["title","description","id","duration_type"],axis=1).values.reshape(1, -1)
+    caracteristicas = df_filtrado.drop(["title","description","id","duration_type"],axis=1)
     features_filtrado = scaler.transform(caracteristicas)
     similarity_matrix_filtrado = cosine_similarity(features_filtrado, features)
     sim_scores = list(enumerate(similarity_matrix_filtrado[0]))
