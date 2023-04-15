@@ -49,7 +49,9 @@ Además de un video explicativo acerca de esta :
 
 
 
-##### Nota :Para acceder a todos los datasets utilizados se puede ingresar al siguiente enlace de drive : https://drive.google.com/drive/folders/1Pg8VaINj7siwIHLICiJyQEDCGqCGvLYi
+##### Nota :Para acceder a todos los datasets utilizados se puede ingresar al siguiente enlace de drive : 
+
+https://drive.google.com/drive/folders/1Pg8VaINj7siwIHLICiJyQEDCGqCGvLYi?usp=sharing
 
 
 
