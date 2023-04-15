@@ -68,7 +68,7 @@ async def index(request: Request):
         </div>
     </body>
 """
-return HTMLResponse(content=output)
+    return HTMLResponse(content=output)
 
 # Se desarrollan las consultas que fueron solicitadas por el cliente:
 
