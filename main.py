@@ -212,12 +212,12 @@ def get_contents(rating: str):
 # se ordenarán según el score y devolverá una lista con 5 valores, cada uno siendo el string del nombre de las películas con mayor puntaje, en orden descendente.
 
 @app.get('/get_recomendation/{title}')
-def get_recommendations_new(title, df=df_modelo, num_recommendations=5):
-    features = df.drop(["title","description","id","duration_type"],axis=1)
+def get_recommendations_new(title, num_recommendations=5):
+    features = df_modelo.drop(["title","description","id","duration_type"],axis=1)
     scaler = StandardScaler()
     features = scaler.fit_transform(features)
     # Obtener las características de la película a recomendar
-    df_filtrado = df[df['title'] == title]
+    df_filtrado = df_modelo[df_modelo['title'] == title]
     # Si la película no se encuentra en el conjunto de datos, se crea un vector de características
     caracteristicas = df_filtrado.drop(["title","description","id","duration_type"],axis=1).values.reshape(1, -1)
     features_filtrado = scaler.transform(caracteristicas)
