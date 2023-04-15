@@ -47,23 +47,23 @@ async def index(request: Request):
                     <p>Aquí encontrarás 7 diferentes tipos de búsquedas disponibles:</p>
                     <ol>
                         <li>Película con mayor duración según año, plataforma y tipo de duración.<br>
-                            Ejemplo: .../get_max_duration/{anio}/{plataforma}/{dtype}</li>
+                            (<a href="https://mlops-render.onrender.com/get_max_duration/2020/netflix/min"> Ejemplo1</a>)</li>
                         <li>Cantidad de películas según plataforma, con un puntaje mayor a XX en determinado año.<br>
-                            Ejemplo: .../get_score_count/{plataforma}/{scored}/{anio}</li>
+                             (<a href="https://mlops-render.onrender.com/get_score_count/disney/3/2020"> Ejemplo2</a>)</li>
                         <li>Cantidad de películas según plataforma.<br>
-                            Ejemplo: .../get_count_platform/{plataforma}</li>
+                             (<a href="https://mlops-render.onrender.com/get_count_platform/amazon"> Ejemplo3</a>)</li>
                         <li>Actor que más se repite según plataforma y año.<br>
-                            Ejemplo: .../get_actor/{plataforma}/{anio}</li>
+                             (<a href="https://mlops-render.onrender.com/get_actor/disney/1999"> Ejemplo4</a>)</li>
                         <li>La cantidad de contenidos que se publicó por país y año.<br>
-                            Ejemplo: .../prod_per_country/{tipo}/{pais}/{anio}</li>
+                           (<a href="https://mlops-render.onrender.com/prod_per_country/movie/argentina/2020"> Ejemplo5</a>)</li>
                         <li>La cantidad total de contenidos según el rating de audiencia dado.<br>
-                            Ejemplo: .../get_contents/{rating}</li>
+                             (<a href="https://mlops-render.onrender.com/get_contents/13+"> Ejemplo6</a>)</li>
                         <li>Modelo de recomendación de películas.<br>
-                            Ejemplo: .../get_recomendation/{title}</li>
+                            (<a href="https://mlops-render.onrender.com/get_recomendation/finding nemo"> Ejemplo7</a>)</li>
                     </ol>
                     <p>En el archivo README.md del repositorio de GitHub (<a href="https://github.com/MatyTrova/PI-MLOps">https://github.com/MatyTrova/PI-MLOps</a>), encontrarás información detallada sobre el formato de búsqueda que debes seguir para cada una de las consultas disponibles.</p>
                 </div>
-                <img src="https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/plataformas.jpg" width="420" height="700">
+                <img src="https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/michael.jpg" width="420" height="315">
             </div>
         </div>
     </body>
