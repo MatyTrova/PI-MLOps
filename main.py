@@ -41,7 +41,7 @@ async def index(request: Request):
     <body>
         <div style="display:flex; flex-direction:row;">
             <div style="display:flex; flex-direction:row; background-color:#f2f2f2;">
-                <img src="https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/streaming.jpg" width="420" height="700">
+                <img src="https://raw.githubusercontent.com/MatyTrova/PI-MLOps/main/imgs/streaming.jpg" width="420" height="568">
                 <div style="display:flex; flex-direction:column; margin-left:20px;">
                     <h1>¡Te damos la bienvenida a nuestra plataforma en línea, donde podrás realizar consultas sobre películas y series de diversas plataformas, como Netflix, Amazon, Hulu y Disney!</h1>
                     <p>Aquí encontrarás 7 diferentes tipos de búsquedas disponibles:</p>
