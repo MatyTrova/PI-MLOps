@@ -23,8 +23,8 @@ Este proyecto es una oportunidad para explorar en profundidad el proceso de desa
 ## `API`
 
 A continuación estará el enlace a la respectiva api y su documentación: 
-+ (enlace)
-+ (enlace/documentación)
++ https://mlops-render.onrender.com/
++ https://mlops-render.onrender.com/docs
 
 Además de un video explicativo acerca de esta : 
 
@@ -34,21 +34,22 @@ Además de un video explicativo acerca de esta :
 
 + README.md: Archivo principal con información detallada del proyecto.
 
-+ Datasets: Contiene los data sets utilizados en el proyecto.
++ modelo.ipynb: Contiene todo el desarrollo del modelo de machine learning para la recomendación de películas. Se adjunta con "df_modelo.csv"
 
-+ ETL.ipynb: Notebook de python con el código para realizar la extracción, transformación y carga de datos.
++ ETL.ipynb: Contiene el el código para realizar la extracción, transformación y carga de datos para su posterior implementación para la api. Se adjunta con    "df_streaming.csv"
 
-+ EDA.ipynb: Notebook de python con el código para el análisis exploratorio de datos, y la implementación del modelo de machine learning.
++ EDA.ipynb: Contiene el código para el análisis exploratorio de datos, y las conclusiones de ésta.
 
-+ Consultas.ipynb: Notebook de python con las funciones para realizar consultas de búsqueda en el set de datos.
++ Consultas.ipynb: Contiene las funciones para realizar consultas de búsqueda en el set de datos.
 
-+ main.py: Contiene todo el código la formación y correcto funcionamiento de la API
++ main.py: Contiene todo el código la formación y correcto funcionamiento de la API.
 
-+ requirements.txt: archivo con las dependencias y librerías necesarias para ejecutar el proyecto.
++ requirements.txt: Archivo con las dependencias y librerías necesarias para ejecutar el proyecto.
 
 
 
-##### Nota :En la carpeta `Datasets` solo se encontraran los archivos comprimidos ya que el resto es muy pesado. Para acceder a todos los datasets utilizados se puede ingresar al siguiente enlace de drive : https://drive.google.com/drive/folders/1b49OVFJpjPPA1noRBBi1hSmMThXmNzxn
+
+##### Nota :Para acceder a todos los datasets utilizados se puede ingresar al siguiente enlace de drive : https://drive.google.com/drive/folders/1Pg8VaINj7siwIHLICiJyQEDCGqCGvLYi
 
 
 
