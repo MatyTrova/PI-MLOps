@@ -234,7 +234,7 @@ def get_contents(rating: str):
 # se ordenarán según el score y devolverá una lista con 5 valores, cada uno siendo el string del nombre de las películas con mayor puntaje, en orden descendente.
 
 @app.get('/get_recomendation/{title}')
-def get_recommendations_new(title: str):
+def get_recomendation(title: str):
     num_recommendations=5
     features = df_modelo.drop(["title","description","id","duration_type"],axis=1).values
     scaler = StandardScaler()
