@@ -28,7 +28,7 @@ A continuación estará el enlace a la respectiva api y su documentación:
 
 Además de un video explicativo acerca de esta : 
 
-+ (enlace/video)
++ https://drive.google.com/drive/folders/1KljLVg5bE5cXME1Ik1DDAD-gUdgaO-pK?usp=sharing
 
 ## `Estructura del repositorio`
 
