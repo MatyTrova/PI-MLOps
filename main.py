@@ -209,7 +209,7 @@ def prod_per_country(tipo: str, pais: str, anio: int):
     # Contar la cantidad de filas del contenido
     count = len(df_filtrado["id"])
     # Crear un diccionario con los resultados
-    return {'pais': pais, 'anio': anio, 'peliculas': count}
+    return {'pais': pais, 'anio': anio, 'contenido': count}
 
 
 # Consulta 6: La cantidad total de contenidos/productos (todo lo disponible en streaming, series, documentales, peliculas, etc),
